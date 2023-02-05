@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poetry", "Poetry\Poetry.csproj", "{2FE01572-AC2F-4CC0-852B-FE50471BEA3B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infra", "infra", "{5C706F99-EA1C-4601-9837-9C0558213ECD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{BE8C24EA-7DB1-433C-AA90-402F7EFE0531}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poetry.Main", "Poetry.Main\Poetry.Main.csproj", "{08862B8A-F9E1-4C0B-B7EC-BF4913A11F09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FE01572-AC2F-4CC0-852B-FE50471BEA3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FE01572-AC2F-4CC0-852B-FE50471BEA3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FE01572-AC2F-4CC0-852B-FE50471BEA3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FE01572-AC2F-4CC0-852B-FE50471BEA3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08862B8A-F9E1-4C0B-B7EC-BF4913A11F09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08862B8A-F9E1-4C0B-B7EC-BF4913A11F09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08862B8A-F9E1-4C0B-B7EC-BF4913A11F09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08862B8A-F9E1-4C0B-B7EC-BF4913A11F09}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
