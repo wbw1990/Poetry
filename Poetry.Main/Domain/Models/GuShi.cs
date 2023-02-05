@@ -12,41 +12,45 @@ public class GuShi
     
     
     [BsonElement("id")]
-    public String SelfId { get; set; }
+    public string SelfId { get; set; }
     
     [BsonElement("code")]
-    public String Code { get; set; }
+    public string Code { get; set; }
+    
+    
+    [BsonElement("index")]
+    public int Index { get; set; }
     
     [BsonElement("title")]
-    public String Title { get; set; }
+    public string Title { get; set; }
     
     [BsonElement("type")]
-    public String Type { get; set; }
+    public string Type { get; set; }
     
     [BsonElement("sort")]
     public int Sort { get; set; }
     
     [BsonElement("author")]
-    public String Author { get; set; }
+    public string Author { get; set; }
     
     [BsonElement("source")]
-    public String Source { get; set; }
+    public string Source { get; set; }
     
     [BsonElement("tag")]
-    public String Tag { get; set; }
+    public string Tag { get; set; }
     
     [BsonElement("bj")]
-    public String Bj { get; set; }
+    public string Bj { get; set; }
     
     [BsonElement("content")]
-    public String Content { get; set; }
+    public string Content { get; set; }
     
     [BsonElement("translation")]
-    public String Translation { get; set; }
+    public string Translation { get; set; }
     
     [BsonElement("notes")]
-    public String Notes { get; set; }
+    public string Notes { get; set; }
     
     [BsonElement("appreciation")]
-    public IList<String> Appreciation { get; set; }
+    public IList<string> Appreciation { get; set; }
 }

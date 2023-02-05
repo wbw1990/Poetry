@@ -14,43 +14,56 @@ public class GuShiController: ControllerBase
     public GuShiController(GuShiQueryHandler guShiQueryHandler) =>
         _guShiQueryHandler = guShiQueryHandler;
     
-    [HttpGet("get/{id}")]
+    [HttpGet("get")]
     public async Task<ActionResult<GuShi>> Get(string id)
     {
-        var book = await _guShiQueryHandler.GetAsync(id);
+        var data = await _guShiQueryHandler.GetAsync(id);
 
-        if (book is null)
+        if (data is null)
         {
             return NotFound();
         }
 
-        return book;
+        return data;
     }
     
-    [HttpGet("get_by_self_id/{id}")]
+    [HttpGet("get_by_self_id")]
     public async Task<ActionResult<GuShi>> GetBySelfId(string id)
     {
-        var book = await _guShiQueryHandler.GetBySelfIdAsync(id);
+        var data = await _guShiQueryHandler.GetBySelfIdAsync(id);
 
-        if (book is null)
+        if (data is null)
         {
             return NotFound();
         }
 
-        return book;
+        return data;
     }
     
     [HttpGet("get_by_title")]
     public async Task<ActionResult<GuShi>> GetByTitle(string title,string author)
     {
-        var book = await _guShiQueryHandler.GetByTitleAsync(title,author);
+        var data = await _guShiQueryHandler.GetByTitleAsync(title,author);
 
-        if (book is null)
+        if (data is null)
         {
             return NotFound();
         }
 
-        return book;
+        return data;
+    }
+    
+    [HttpPost("get_list")]
+    public async Task<ActionResult<List<GuShi>>> GetList(GetListQueryArgs query)
+    {
+        var data = await _guShiQueryHandler.GetListAsync(query);
+
+        if (data is null)
+        {
+            return NotFound();
+        }
+
+        return data;
     }
 
 
